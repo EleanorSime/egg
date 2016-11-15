@@ -8,9 +8,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="eggstylesheet.css">
+  <link rel="stylesheet" href="stylesheets/eggstylesheet.css">
+  <script type="text/javascript"></script>
 
 <body>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"> <img src="images/egg_button_scruffy.png"></button>
+<div id="myDropdown" class="dropdown-content">
+  <a ref="#Poached">Poached</a>
+    <a ref="#Scrambled">Scrambled</a>
+      <a ref="#Omelette">Omelette</a>
+      	<a ref="#Scotch">Scotch</a>
+      		<a ref="#Boiled">Boiled</a>
+    </div>
+  </div>
+
+<script>
+function myFunction () {
+
+document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+
+	var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+			for (i = 0; i<dropdowns.length; i++)  {
+				var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+</script>
 
   <img src="images/Poached_eggstextheader.png" style="" alt="Boiled Eggs">
 
@@ -51,8 +82,8 @@
 <h1>Ingredients</h1>
 <ul> 
   <li>Free range eggs</li>
-  <li>salt</li>
-  <li>pepper</li>
+  <li>Salt</li>
+  <li>Pepper</li>
 </ul>
 <p> 
 </br>
