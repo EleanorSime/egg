@@ -11,6 +11,9 @@ h1 {
     size: 18px;
     padding-left: 20px;
 }
+body {background-color: rgb(101,157,160);
+}
+
 .background { background-color: #C4F2EB; }
 
 /* Dropdown Button style */
@@ -30,11 +33,7 @@ h1 {
 
 /* Dropdown Button on hover and focus */
 .dropbtn:hover, .dropbtn:focus {
-<<<<<<< Updated upstream
-	background-color:#ADD8E6;
-=======
     background-color:#3e8e41 ;
->>>>>>> Stashed changes
 }
 /* the container <div> - needed to position the dropdown content */
 .dropdown {
@@ -52,6 +51,7 @@ h1 {
     box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
     right: 0;
     font: Helvetica; Sans serif;
+    z-index: 100;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -59,15 +59,17 @@ h1 {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    z-index:100;
 }
 
 /* Change color of dropdown links on hover */
-<<<<<<< Updated upstream
-.dropdown-content a:hover {background-color: #ADD8E6}
+.dropdown-content a:hover {background-color: #f1f1f1;
+                            z-index: 100;}
 
 /* Show the dropdown menu (us JS to add this class to the .dropdown-content container 
 when the user clicks on the dropdown button) */
 .show {display:block;}
+
 /*this is for the form button on the homepage */
 #myBtn {
     color: black;
@@ -90,10 +92,4 @@ margin-top: -100px; /* Negative half of height. */
 margin-left: -250px; /* Negative half of width. */
 }
 
-=======
-.dropdown-content a:hover {background-color: #f1f1f1 }
 
-/* Show the dropdown menu (us JS to add this class to the .dropdown-content container 
-when the user clicks on the dropdown button) */
-.show {display:block;}
->>>>>>> Stashed changes
