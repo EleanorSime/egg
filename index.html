@@ -84,11 +84,7 @@
 <title>Egg</title>
 </head>
 <body>
-<!-- Trigger/Open The Modal -->
-<div id="buttonposition">
-<button id="myBtn"> What are you're favourite eggs?
-</button>
-</div>
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <!-- Modal content -->
@@ -122,7 +118,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
+} 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -139,5 +135,5 @@ window.onclick = function(event) {
 <area shape="rect" coords="394,391,508,501" href="poached_egg.html">
 <area shape="rect" coords="132,527,254,633" href="scotch_egg.html">
 <area shape="rect" coords="268,523,384,621" href="scrambled_egg.html">
-<area shape="rect" coords="406,521,510,619" href="form_egg.html">
+<area shape="rect" coords="406,521,510,619" onclick="modal.style.display = 'block'" oncancel="modal.style.display = 'none'" style="cursor: pointer;" id="myBtn">
 </body>
