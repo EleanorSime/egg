@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 <head>
   <title>Boiled Eggs</title>
@@ -11,37 +10,38 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylesheets/eggstylesheet.css">
   <script type="text/javascript"></script>
+</head>
 
 <body>
 <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn"> <img src="images/egg_button_scruffy.png"></button>
-<div id="myDropdown" class="dropdown-content">
-  <a ref="#Poached">Poached</a>
-    <a ref="#Scrambled">Scrambled</a>
-      <a ref="#Omelette">Omelette</a>
-        <a ref="#Scotch">Scotch</a>
-          <a ref="#Boiled">Boiled</a>
+    <button  class="dropbtn"><img src="images/egg_button_scruffy.png" onclick="myFunction()" alt="egg" width="32" height="32" class="dropbtn egg-image" /></button>
+    <div id="myDropdown" class="dropdown-content">
+     <a ref="#Poached">Poached</a>
+       <a ref="#Scrambled">Scrambled</a>
+         <a ref="#Omelette">Omelette</a>
+             <a ref="#Scotch">Scotch</a>
+                 <a ref="#Boiled">Boiled</a>
     </div>
-  </div>
+</div>
 
 <script>
-function myFunction () {
-
-document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-      for (i = 0; i<dropdowns.length; i++)  {
-        var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        }
-      }
+    function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
     }
-  }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+                for (i = 0; i<dropdowns.length; i++)  {
+                    var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
 </script>
 
   <img src="images/Boiled_eggstextheader.png" style="" alt="Boiled Eggs">
@@ -96,21 +96,3 @@ window.onclick = function(event) {
 </p>
 </body>
 </html>
-=======
-<head>
-<title>Eggs</title>
-<link rel="stylesheet" type="text/css" href="seggstylesheet.css">
-</head>
-<body>
-<!--this is the nav bar html -->
-<ul>
-	<li><a href="homepage.html"><img src="images/egg menu button.jpg" alt="Egg" height="35" width="35" ></a></li>
-	<li><a href="poached_egg.html">Poached Eggs</a></li>
-	<li><a href="scotch_egg.html">Scotched Eggs</a></li>
-	<li><a href="scrambled_egg.html">Scrambled Eggs</a></li>
-	<li><a href="omelette_egg.html">Omelette</a></li>
-	<li><a href="boiled_egg.html">Boiled Eggs</a></li>
-	<li><a href="form_egg.html">Do you love eggs?</a></li>
-</ul>
-</body>
->>>>>>> origin/master
